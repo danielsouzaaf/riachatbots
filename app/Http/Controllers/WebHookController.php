@@ -11,7 +11,7 @@ class WebHookController extends Controller
     public function clinica(Request $request)
     {
         $asArray = json_decode($request->getContent(), true);
-        $agendamento = $asArray['result']['contexts'][4]['parameters'];
+        $agendamento = $asArray['result']['contexts'][7]['parameters'];
         $criado = Agendamento::create($agendamento);
 
         return $criado;
