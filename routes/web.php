@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/webhook/clinica', 'WebHookController@clinica');
+
+Route::get('clinica/listar', 'WebHookController@listar');
