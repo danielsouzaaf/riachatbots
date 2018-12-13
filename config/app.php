@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        RiaChatBots\Providers\AppServiceProvider::class,
+        RiaChatBots\Providers\AuthServiceProvider::class,
+        // RiaChatBots\Providers\BroadcastServiceProvider::class,
+        RiaChatBots\Providers\EventServiceProvider::class,
+        RiaChatBots\Providers\RouteServiceProvider::class,
 
     ],
 
